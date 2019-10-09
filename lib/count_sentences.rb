@@ -15,7 +15,6 @@ class String
   end
 
   def count_sentences 
-    binding.pry
     sentences = 0
     array = self.split(" ")
     array.each do |str|
