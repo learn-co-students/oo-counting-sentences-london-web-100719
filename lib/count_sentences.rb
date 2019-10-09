@@ -15,5 +15,5 @@ class String
   end
 
   def count_sentences
-    self.split("." || "?" || "!").select {|item| item.length > 0}.count
+    array = self.split.count
 end
