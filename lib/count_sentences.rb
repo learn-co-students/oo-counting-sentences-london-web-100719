@@ -14,7 +14,16 @@ class String
     self.end_with?("!") ? true : false
   end
 
-  def count_sentences
-    array = self.split
+  def count_sentences 
     binding.pry
+    sentences = 0
+    array = self.split(" ")
+    array.each do |str|
+      if str.sentence? || str.question? || str.exclamation?
+        sentences += 1
+      end
+    end
+    sentences
+  end
+
 end
