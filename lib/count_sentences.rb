@@ -1,5 +1,3 @@
-require 'pry'
-
 class String
 
   def sentence?
@@ -17,4 +15,5 @@ class String
   def count_sentences
     self.scan(/[^\.!?]+[\.!?]/).count
   end
+
 end
