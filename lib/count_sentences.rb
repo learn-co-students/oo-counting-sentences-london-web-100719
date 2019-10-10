@@ -18,6 +18,3 @@ class String
     self.split.count {|element| element.sentence? || element.question? || element.exclamation?}
   end
 end
-
-binding.pry
-p "oeteagr"
